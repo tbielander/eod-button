@@ -1,0 +1,68 @@
+<div id="eod-button" ng-if="$ctrl.showEODButton" ng-switch="$ctrl.lang" style="padding:1em;">
+    <button ng-switch-when="de" ng-click="$ctrl.toggleEODInfo()" title="Bestellen Sie ein eBook via eod" style="max-width:12%; max-height:auto; border-style:solid; border-width:1px; border-radius:4px; border-color:#817f84; padding:3px; background-color:#ffffff; hyphens:auto; color:#404042; font-size:0.7em;" onmouseover="this.style.backgroundColor = '#e6e5e6'" onmouseout="this.style.backgroundColor = '#ffffff'" onmousedown="this.style.backgroundColor = '#c6c5c8'">
+        <img src="custom/41SLSP_UBS-eod/js/eod-logo.png" alt="eod-Logo" style="max-width:90%; max-height:auto;"><br>
+        eBook bestellen
+    </button>
+    <button ng-switch-when="en" ng-click="$ctrl.toggleEODInfo()" title="Order an ebook via eod" style="max-width:12%; max-height:auto; border-style:solid; border-width:1px; border-radius:4px; border-color:#817f84; padding:3px; background-color:#ffffff; hyphens:auto; color:#404042; font-size:0.7em;" onmouseover="this.style.backgroundColor = '#e6e5e6'" onmouseout="this.style.backgroundColor = '#ffffff'" onmousedown="this.style.backgroundColor = '#c6c5c8'">
+        <img src="custom/41SLSP_UBS-eod/js/eod-logo.png" alt="eod logo" style="max-width:90%; max-height:auto;"><br>
+        order an ebook
+    </button>
+    <button ng-switch-when="fr" ng-click="$ctrl.toggleEODInfo()" title="Commandez un livre numérique via eod" style="max-width:12%; max-height:auto; border-style:solid; border-width:1px; border-radius:4px; border-color:#817f84; padding:3px; background-color:#ffffff; hyphens:auto; color:#404042; font-size:0.7em;" onmouseover="this.style.backgroundColor = '#e6e5e6'" onmouseout="this.style.backgroundColor = '#ffffff'" onmousedown="this.style.backgroundColor = '#c6c5c8'">
+        <img src="custom/41SLSP_UBS-eod/js/eod-logo.png" alt="logo eod" style="max-width:90%; max-height:auto;"><br>
+        commander un livre numérique
+    </button>
+    <button ng-switch-when="it" ng-click="$ctrl.toggleEODInfo()" title="Ordina un e-book via eod" style="max-width:12%; max-height:auto; border-style:solid; border-width:1px; border-radius:4px; border-color:#817f84; padding:3px; background-color:#ffffff; hyphens:auto; color:#404042; font-size:0.7em;" onmouseover="this.style.backgroundColor = '#e6e5e6'" onmouseout="this.style.backgroundColor = '#ffffff'" onmousedown="this.style.backgroundColor = '#c6c5c8'">
+        <img src="custom/41SLSP_UBS-eod/js/eod-logo.png" alt="logo eod" style="max-width:90%; max-height:auto;"><br>
+        ordinare un e-book
+    </button>
+    <button ng-switch-default ng-click="$ctrl.toggleEODInfo()" title="Bestellen Sie ein eBook via eod" style="max-width:12%; max-height:auto; border-style:solid; border-width:1px; border-radius:4px; border-color:#817f84; padding:3px; background-color:#ffffff; hyphens:auto; color:#404042; font-size:0.7em;" onmouseover="this.style.backgroundColor = '#e6e5e6'" onmouseout="this.style.backgroundColor = '#ffffff'" onmousedown="this.style.backgroundColor = '#c6c5c8'">
+        <img src="custom/41SLSP_UBS-eod/js/eod-logo.png" alt="eod-Logo" style="max-width:90%; max-height:auto;"><br>
+        eBook bestellen
+    </button>
+</div>
+<div id="eod-info" ng-switch="$ctrl.lang" style="display:none; margin-bottom:1em; background-color:#ffffff; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding:0em 1em 0.5em 1em;">
+    <div style="margin:0em -1em 1em -1em; height:2.2em; padding:0.5em 0.6em 0.1em 1.1em; background-color:#817f84; color:#ffffff;">
+        <span style="color:#ffffff;">ebooks on demand</span>
+        <span ng-click="$ctrl.toggleEODInfo()" style="float:right; margin-top:-0.2em; color:#ffffff; font-weight:bold; font-size:1.5em; cursor:pointer;">&times;</span>
+    </div>
+    <div ng-switch-when="de">
+        <p>Mit dem (kostenpflichtigen) EOD-Service können Sie das von Ihnen ausgewählte Werk als digitale Ausgabe bestellen.</p>
+        <p>Falls Sie die Digitalisate im TIFF-Format wünschen, aktivieren Sie bitte zu Beginn des Bestellvorgangs die Option "Hochaufgelöste Images" und wählen Sie auf Seite 2 des Bestellformulars ("Bestelloptionen") das TIFF-Format.</p>
+        <p>Falls Sie nur Teile des Werkes wünschen, können Sie dies im Feld "Anmerkungen" ebenfalls auf Seite 2 des Formulars vermerken.</p>
+        <p>Beachten Sie, dass die Preisberechnung nicht immer korrekt funktioniert. Sie erhalten von uns in jedem Fall einen Kostenvoranschlag mit dem definitiven Preis.</p>
+        <p>Bitte wählen Sie das gewünschte Exemplar, um zum Bestellformular zu gelangen:</p>
+    </div>
+    <div ng-switch-when="en">
+        <p>In exchange for a payment, this service allows you to order the work you selected as a digital copy.</p>
+        <p>In case you would like the scans as TIFF files, please select the appropriate option on page 2 ("request options").</p>
+        <p>If you need only excerpts of the work, you can enter a note in the field "Comments" on page 2 ("request options") of the form.</p>
+        <p>Please note that the price calculation is not always correct. You will definitely receive a quotation from us for the exact amount.</p>
+        <p>Please select the copy you would like to have from the list:</p>
+    </div>
+    <div ng-switch-when="fr">
+        <p>Ce service vous permet de commander (contre rémunération) l'exemplaire digitalisé d'un livre au format papier.</p>
+        <p>Si vous souhaitez avoir des scans au format TIFF, veuillez s'il vous plaît activer cette option sur la page suivante de ce formulaire: page 2, "Options de commande".</p>
+        <p>Si vous ne souhaitez digitaliser qu'une partie de l'oeuvre, vous pouvez le notifier dans le champ "Remarque" qui figure sur la page suivante de ce formulaire : page 2, "Options de commande".</p>
+        <p>Notez que le calcul du prix ne fonctionne pas toujours de façon correcte. Dans tous les cas vous recevrez de notre part un devis avec le prix définitif.</p>
+        <p>Veuillez s'il vous plaît choisir l'exemplaire dans la liste qui suit:</p>
+    </div>
+    <div ng-switch-when="it">
+        <p>Con il servizio EOD (a pagamento) è possibile ordinare il documento prescelto in versione digitale.</p>
+        <p>Per ricevere il testo digitalizzato in formato TIFF, basta attivare all’inizio del processo di ordinazione l’opzione "Immagini ad alta risoluzione" e, sulla pagina 2 del formulario di ordinazione ("Opzioni dell’ordine"), scegliere il formato TIFF.</p>
+        <p>Se desiderate ricevere solo una parte del testo, potete indicarlo nel campo "Osservazioni" della pagina 2 del formulario.</p>
+        <p>Vogliate notare che la valutazione dei costi non sempre funziona correttamente. Riceverete in ogni caso da parte nostra un preventivo col prezzo definitivo.</p>
+        <p>Cliccate sul documento desiderato per accedere al formulario di ordinazione:</p>
+    </div>
+    <div ng-switch-default>
+        <p>Mit dem (kostenpflichtigen) EOD-Service können Sie das von Ihnen ausgewählte Werk als digitale Ausgabe bestellen.</p>
+        <p>Falls Sie die Digitalisate im TIFF-Format wünschen, aktivieren Sie bitte zu Beginn des Bestellvorgangs die Option "Hochaufgelöste Images" und wählen Sie auf Seite 2 des Bestellformulars ("Bestelloptionen") das TIFF-Format.</p>
+        <p>Falls Sie nur Teile des Werkes wünschen, können Sie dies im Feld "Anmerkungen" ebenfalls auf Seite 2 des Formulars vermerken.</p>
+        <p>Beachten Sie, dass die Preisberechnung nicht immer korrekt funktioniert. Sie erhalten von uns in jedem Fall einen Kostenvoranschlag mit dem definitiven Preis.</p>
+        <p>Bitte wählen Sie das gewünschte Exemplar, um zum Bestellformular zu gelangen:</p>
+    </div>
+    <ul>
+        <li ng-repeat="x in $ctrl.shelfmarks">
+            <a href="https://www.books2ebooks.eu/odm/orderformular.do?formular_id=371&sys_id={{$ctrl.recordID}}&shelfmark={{x}}&lang={{$ctrl.lang}}" target="_blank">{{$ctrl.translateLibraryName}}: {{x}}</a>
+        </li>
+    </ul>
+</div>
