@@ -107,7 +107,7 @@
   app.component('prmRequestServicesAfter', {
     bindings: { parentCtrl: '<' },
     controller: 'RequestServicesAfterController',
-    // absolute path to eod html template inside your customization package:
+    // template url contains name of customization package!
     templateUrl: 'custom/41SLSP_UBS-eod/js/templates/eod-info.html'
   });
   
